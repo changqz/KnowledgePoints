@@ -1,0 +1,96 @@
+day1
+基础
+
+ list-style: none;去除li小圆点
+ text-decoration: none;去除a标签下划线
+ position属性
+	absolute绝对定位脱离文档流
+	relative相对定位不脱离文档流
+	fixed固定定位脱离文档流并且不随页面滑动
+ background-image背景定位需要加background-position才能实现背景定位
+ overflow: hidden子元素超出部分隐藏
+ display: inline-block把某个行内或块级元素变成行内块元素
+ border:线的大小 虚线(dashed)实线(solid) 颜色
+ margin: 0 auto;水平居中
+ line-height:元素本身的高度;垂直居中
+ text-align: center;字体水平居中还可以调块内水平居中
+ vertical-align: middle;和某个参照物对齐;top:行内块顶部对齐
+ float浮动left左浮动
+ background-color:背景颜色 chartreuse透明;可以设置其他的;
+ cursor: pointer鼠标移上去变小手
+
+day2
+
+H5弹性盒子
+ display: flex;在某个元素设置这个属性这个元素及它的子元素就是弹性盒子了
+ flex-wrap: wrap;指定弹性盒子的子元素换行方式。nowrap 不换行reverse:反序wrap:正序换行wrap-reverse:反序换行
+ justify-content: center;弹性容器的主轴线对齐。也就是横向居中 center :横向居中space-around 按1:1:1...方式排列space-between 两边 被填充
+ align-items: center;弹性盒子元素在侧轴（纵轴）方向上的对齐方式。也就是纵向居中。center:在元素纵轴居中
+
+
+H5动画阴影及过度变换
+
+ 过度变换:
+ 	transition: 是由这四个属性简化而成property duration timing-function delay;
+		第一个property:设置过渡效果的 CSS 属性的名称。可以设置为all
+		第二个duration:规定完成过渡效果需要多少秒或毫秒。2s 2ms
+		第三个timing-function:规定速度效果的速度曲线。可以写ease-in-out
+		第四个delay:定义过渡效果何时开始。可以不写
+   	transform:属性向元素应用 2D 或 3D 转换。该属性允许我们对元素进行旋转、缩放、移动或倾斜。
+		transform下的属性
+			translate(x,y)平移x横向平移y纵向平移
+			skew(200deg)拉伸整个拉伸x右上角和左下角拉伸y左上角和右下角拉伸后缀deg
+			scale(2)放大里面放大多少倍x横向放大y纵向放大
+			rotate(deg)旋转里面放旋转多少度x上下旋转y左右旋转
+ 动画:
+	animation: name(绑定有动画的名字) duration(动画显示时间“以秒或毫秒计算”) timing-function(动画播放速度可以填linear) delay（动画开始之前的延迟可以填infinite） iteration-count(规定动画应该播放的次数。可以填alternate) direction(规定是否应该轮流反向播放动画。)    
+	@keyframes(定义动画要加@后面加keyframes) 名字 { from(开始){} to(结束){} 除了from to 也可以写百分比而且无限制比如 0%{} 50% 100%无限制   }
+ 	
+ 阴影:
+	box-shadow: 5px(必需。水平阴影的位置。允许负值。正值往右，负值往左)5px(必需。垂直阴影的位置。允许负值。正值往下，负值往上)5px(可选。模糊距离。值越大越模糊)5px(可选。阴影的大小。值越大阴影越大)#000(阴影颜色默认黑色)
+
+
+
+
+
+http://www.swiper.com.cn/demo/index.html
+
+
+git命令
+git init    初始化一个仓库 .git
+git add 文件名         添加改动的文件  git add -A .
+git  commit -m '本次改动的说明'  提交改动的文件(全部提交不写) 本地
+git status    查看仓库状态
+git log    查看提交日志
+git reset --hard 哈希版本号
+
+远程仓库
+git remote add origin 添加远程仓库地址
+git push -u origin master   提价代码至仓库
+git pull origin master:master  更新代码
+git clone 项目地址
+======
+全局设置git客户端的用户名（仅需要设置一次）
+git config --global user.name '名字'
+git config --global user.email '邮箱' 
+
+
+vue下载命令
+
+vue init webpack-simple 项目名字 (加-simple是下载简单vue-cli项目，不加下载完整项目)
+
+cd 项目 && npm i 下载依赖
+
+npm i mysql -D
+
+npm i element.ui -D
+
+node版本 最低8.9+
+       
+npm i @angular/cli -g
+
+ng -v 出现版本说明 安装成功
+
+创建项目ng new demo(项目名字) 自动下载依赖  有可能会失败
+
+ng g component 组件名字

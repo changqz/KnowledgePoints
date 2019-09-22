@@ -1,0 +1,14 @@
+vue1.0    	vue2.0
+ init	   	beforeCreate     组件创建前调用
+ created   	created          组件创建后调用
+ beforeCompile	beforeMount	 挂载之前
+ compile	mounted		 挂载之后
+ ready 		mounted 	 挂载之后(不保证组件已在document中)
+ 		beforeUpdate     更新之前
+		updated 	 更新之后
+		activated 	 组件被激活时调用
+		deactiveted	 组件被移除时调用
+attached			 附加
+datached			 分离
+beforeDestory   beforeDestory    组件销毁前调用
+destoryed  	destoryed	 组件销毁后调用

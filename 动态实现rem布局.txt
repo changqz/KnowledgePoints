@@ -1,0 +1,13 @@
+<!-- dpr = 1--> 
+<meta name="viewport" content="initial-scale=scale,maximum-scale=scale,minimum-scale=scale,user-scalable=no"> 
+<!-- dpr = 2--> 
+<meta name="viewport" content="initial-scale=0.5,maximum-scale=0.5,minimum-scale=0.5,user-scalable=no"> 
+<!-- dpr = 3--> 
+<meta name="viewport" content="initial-scale=0.3333333333,maximum-scale=0.3333333333,minimum-scale=0.3333333333,user-scalable=no">
+
+
+//移动端声明
+<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+//兼容IE（让IE兼容最新的浏览器渲染）和chrome
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>

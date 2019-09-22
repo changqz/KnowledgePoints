@@ -1,0 +1,11 @@
+v-if//显示与隐藏
+v-else//必须和v-if连用
+v-for//循环遍历v-for("字段明 in 数组json")
+v-bind//动态绑定
+v-on//绑定函数
+v-model//给表单双向绑定
+v-show//显示内容
+v-hide//隐藏内容
+v-text//解析文本
+v-html//解析html标签
+v-cloak//防止闪烁
